@@ -23,5 +23,10 @@ public class TestPayStation {
         assertEquals("Should display 10 min for 25 cents", 25 / 5 * 2, ps.readDisplay());
     }
 
+    @Test(expected = IllegalCoinException.class)
+    public void shouldRejectIllegalCoin() throws IllegalCoinException {
+        ps.addPayment(17);
+    }
+
 
 }
