@@ -8,7 +8,7 @@ public class PayStationImp implements PayStation{
     }
 
     public int readDisplay() {
-        return payedSoFar;
+        return payedSoFar / 5 * 2;
     }
 
     @Override
