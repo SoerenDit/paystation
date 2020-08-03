@@ -1,6 +1,6 @@
 package com.company;
 
-public class PayStation {
+public class PayStationImp {
     int payedSoFar;
 
     public void addPayment(int amount) {
