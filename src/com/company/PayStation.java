@@ -6,4 +6,8 @@ public class PayStation {
     public void addPayment(int amount) {
         payedSoFar += amount;
     }
+
+    public int readDisplay() {
+        return payedSoFar;
+    }
 }
